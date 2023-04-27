@@ -3,6 +3,10 @@ const router = express.Router()
 const productController = require('../controllers/productController')
 const verifyJWT = require('../middleware/verifyJWT')
 
+// const {customersData} = require('../data/mockup')
+// const Customer = require('../models/Customer')
+// Customer.insertMany(customersData)
+
 router
   .route('/') //verifyJWT,
   .get(productController.getAllProducts)
